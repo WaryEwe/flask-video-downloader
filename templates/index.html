@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube to MP4 Converter</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="nav-bar">
+        <h1>YouTube to Mp4</h1>
+    </div>
+    <div class="main-block">
+        <form class="download-vid" method="post" action="{{ url_for('download') }}"> 
+            <label for="youtube_url">YouTube Video URL:</label>
+            <input placeholder="Enter a url" type="text" name="url_for" required>
+            <button type="submit">Download</button>
+        </form>
+    </div>
+</body>
+</html>
